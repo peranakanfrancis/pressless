@@ -73,7 +73,7 @@ RUN make -j 5
 RUN cp ./sapi/cli/php /usr/bin/
 
 # for debugging inside container via serverless invoke local OR 
-# $>php handler.php '{"path":"/wp-admin/","httpMethod":"GET","headers":{"Host":"www.domain.com"},"queryStringParameters":null}'
+# $>php handler.php '{"path":"/wp-admin/","httpMethod":"GET","headers":{"Host":"http://khimyan.mobi"},"queryStringParameters":null}'
 #RUN curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -                                  
 #RUN yum install -y nodejs
 #RUN npm install -g serverless serverless-domain-manager
